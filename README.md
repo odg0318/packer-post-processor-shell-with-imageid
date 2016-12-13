@@ -10,7 +10,7 @@ Usage
 Example
 =======
 template.json
-```
+```json
 "post-processors": [
   {
     "type": "shell-with-imageid",
@@ -20,7 +20,7 @@ template.json
 ```
 
 post-processor
-```
+```bash
 #!/bin/bash
 
 # $1: builder [amazon-ebs, googlecompute], $2: image_id
