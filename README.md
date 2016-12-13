@@ -25,9 +25,13 @@ post-processor
 
 # $1: builder [amazon-ebs, googlecompute], $2: image_id
 
-if [ "$1" == "amazon-ebs" ]; then
+if [ "$1" == "amazon-ebs" ]
+then
+        python scripts/add_launching_configuration.py $2
 fi
 
-if [ "$1" == "googlecompute" ]; then
+if [ "$1" == "googlecompute" ]
+then
+        python scripts/add_instance_template.py $2
 fi
 ```
